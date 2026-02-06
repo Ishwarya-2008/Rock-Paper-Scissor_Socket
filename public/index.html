@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">
+            ROCK<br>PAPER<br>SCISSORS<br>LIZARD<br>SPOCK
+        </div>
+        <div class="mode-select">
+            <button onclick="setMode('computer')">Computer</button>
+            <button onclick="setMode('player')">Player</button>
+        </div>
+
+        <div class="score-box">
+            <span>SCORE</span>
+            <h1 id="score">0</h1>
+        </div>
+    </div>
+    <p id="status" class="status"></p>
+    <div class="picked-area">
+        <div class="picked">
+            <p>YOU PICKED</p>
+            <div class="circle" id="youPicked"></div>
+        </div>
+
+        <div class="picked">
+            <p>OPPONENT PICKED</p>
+            <div class="circle" id="oppPicked"></div>
+        </div>
+    </div>
+    <div class="board">
+        <img src="images/bg-pentagon.svg" class="pentagon">
+
+        <div class="choice rock" onclick="play('rock')">
+            <img src="images/icon-rock.svg">
+        </div>
+
+        <div class="choice paper" onclick="play('paper')">
+            <img src="images/icon-paper.svg">
+        </div>
+
+        <div class="choice scissors" onclick="play('scissors')">
+            <img src="images/icon-scissors.svg">
+        </div>
+
+        <div class="choice lizard" onclick="play('lizard')">
+            <img src="images/icon-lizard.svg">
+        </div>
+
+        <div class="choice spock" onclick="play('spock')">
+            <img src="images/icon-spock.svg">
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
