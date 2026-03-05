@@ -149,6 +149,7 @@ body {
     border: 10px solid #52bed1;
 }
 
+/* Tablet View */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -178,5 +179,159 @@ body {
     .circle {
         width: 120px;
         height: 120px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        width: 95%;
+        margin: 15px auto;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .title h1 {
+        font-size: 20px;
+    }
+
+    .mode-select {
+        gap: 8px;
+    }
+
+    .mode-select button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .score-box {
+        padding: 8px 15px;
+        border-radius: 8px;
+    }
+
+    .score-box span {
+        font-size: 10px;
+    }
+
+    .status {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .board {
+        width: 250px;
+        height: 250px;
+        margin: 30px auto;
+    }
+
+    .choice {
+        width: 70px;
+        height: 70px;
+        border-width: 8px;
+    }
+
+    .choice img {
+        width: 35px;
+    }
+
+    .rock {
+        bottom: 0;
+        left: 30px;
+    }
+
+    .paper {
+        top: 80px;
+        right: -15px;
+    }
+
+    .scissors {
+        top: -20px;
+        left: 120px;
+    }
+
+    .lizard {
+        top: 80px;
+        left: -15px;
+    }
+
+    .spock {
+        bottom: 0;
+        right: 30px;
+    }
+
+    .picked-area {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .picked {
+        margin: 10px 0;
+    }
+
+    .picked p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-width: 8px;
+    }
+}
+
+@media (max-width: 360px) {
+    .header {
+        width: 100%;
+        margin: 10px 0;
+        padding: 12px;
+    }
+
+    .title h1 {
+        font-size: 16px;
+    }
+
+    .title p {
+        font-size: 10px;
+    }
+
+    .mode-select button {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+
+    .score-box {
+        padding: 6px 12px;
+    }
+
+    .board {
+        width: 220px;
+        height: 220px;
+        margin: 20px auto;
+    }
+
+    .choice {
+        width: 60px;
+        height: 60px;
+        border-width: 6px;
+    }
+
+    .choice img {
+        width: 30px;
+    }
+
+    .circle {
+        width: 85px;
+        height: 85px;
+        border-width: 6px;
     }
 }

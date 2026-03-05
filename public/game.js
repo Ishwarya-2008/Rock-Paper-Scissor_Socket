@@ -41,7 +41,9 @@ function play(choice) {
         return;
     }
 
-    if (locked) return;
+    if (locked) {
+        return;
+    }
     locked = true;
 
     clearCircles();

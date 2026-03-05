@@ -15,7 +15,6 @@ io.on("connection", socket => {
     }
 
     if (rooms[roomId].players.length >= 2) {
-      socket.emit("room-full");
       return;
     }
 
